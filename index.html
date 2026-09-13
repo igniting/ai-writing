@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Wrote This with Help of AI</title>
+<meta name="description" content="In response to Bryan Cantrill's 'The revolt of the reader'—on AI-assisted writing, fluency, and who did the thinking.">
+<meta property="og:title" content="I Wrote This with Help of AI">
+<meta property="og:description" content="In response to Bryan Cantrill's 'The revolt of the reader'—on AI-assisted writing, fluency, and who did the thinking.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg1: #2b2926;
+    --fg2: #504945;
+    --fg3: #6b6866;
+    --fg4: #7a7674;
+    --fg5: #a3a09c;
+    --rule: #e4e0d8;
+    --link-decoration: color-mix(in srgb, var(--fg1) 32%, transparent);
+    --font-serif: 'Iowan Old Style', 'Iowan Old Style BT', 'Newsreader', Georgia, 'Times New Roman', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1a17;
+      --fg1: #e8e3d8;
+      --fg2: #cfc8ba;
+      --fg3: #aaa397;
+      --fg4: #8d867b;
+      --fg5: #6b655c;
+      --rule: #3a362f;
+      --link-decoration: color-mix(in srgb, var(--fg1) 32%, transparent);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg1);
+    font-family: var(--font-serif);
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  /* ---- Header ---- */
+  header.post-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  h1.post-title {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: clamp(1.7rem, 4vw, 2.15rem);
+    line-height: 1.35;
+    max-width: 34ch;
+    margin: 0 auto 0.7rem;
+    text-wrap: balance;
+  }
+  p.post-subtitle {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--fg3);
+    max-width: 46ch;
+    margin: 0 auto 1.4rem;
+    line-height: 1.5;
+  }
+  .publish-metadata {
+    font-family: var(--font-sans);
+    font-size: 0.86rem;
+    color: var(--fg4);
+    letter-spacing: 0.01em;
+  }
+
+  /* ---- Body copy ---- */
+  article p {
+    font-size: 1.14rem;
+    line-height: 1.65;
+    margin: 0 0 1.3rem;
+  }
+  article h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 3.2rem 0 1.1rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--link-decoration);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.15s ease-in-out;
+  }
+  a:hover {
+    text-decoration-color: var(--fg1);
+  }
+  em { font-style: italic; }
+  blockquote {
+    margin: 1.6rem 0 1.6rem 0.2rem;
+    padding: 0.05rem 0 0.05rem 1.4rem;
+    border-left: 2px solid var(--fg5);
+    color: var(--fg2);
+    font-size: 1.06rem;
+    line-height: 1.6;
+  }
+
+  /* ---- Separator ---- */
+  .section-break {
+    display: block;
+    width: 3rem;
+    margin: 2.8rem auto;
+    border: none;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ---- Footer ---- */
+  footer.page-footer {
+    margin-top: 4.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--fg4);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="post-heading">
+    <h1 class="post-title">I Wrote This with Help of AI</h1>
+    <p class="post-subtitle">In response to Bryan Cantrill's "The revolt of the reader"</p>
+    <div class="publish-metadata">September 2026</div>
+  </header>
+
+  <article>
+    <p>I have never been especially good at written English. I can explain an engineering problem in conversation, argue about design trade-offs and work through failure modes with colleagues. Turning the same material into an essay has always been much harder. Too much of my attention goes into grammar, sentence construction and the fear that something sounds strange. The effort of writing can overwhelm the idea I wanted to communicate.</p>
+
+    <p>Before LLMs, many of those ideas remained in notes. This was true of technical subjects, where I had knowledge acquired through years of work, and of non-technical subjects that I wanted to understand through writing. The limiting factor was often my ability to produce the kind of English that people expect from a public essay.</p>
+
+    <p>AI changed that. It gave me a way to bring those ideas to readers.</p>
+
+    <hr class="section-break">
+
+    <p>I recognize the writing Bryan Cantrill is angry about. Someone enters a vague prompt, receives a fluent essay, glances through it and publishes it under their name. The prose is padded with empty transitions and claims that nobody has checked. Ask the supposed author about a paragraph and they may be unable to defend it. Readers sense the absence of thought and leave.</p>
+
+    <p>That reaction is reasonable. I leave those pieces too.</p>
+
+    <p>Cantrill's argument goes further, however. He treats substantial LLM involvement in the prose as evidence that the author avoided the intellectual work of writing. His social contract says that a reader should not have to labor over a sentence that the writer did not labor to create.</p>
+
+    <p>The amount of original typing is a poor measure of intellectual labor.</p>
+
+    <p>When I work with an LLM, I bring the subject, the reason for writing, the claims I believe are supported, the examples that matter and the conclusion I am prepared to defend. The model gives those materials a possible form. I then have to decide whether the form is accurate. Models routinely make an argument sound more certain than the evidence allows. They invent convenient connections, remove useful complications and replace specific observations with language that could have appeared in any article. Much of the work lies in noticing those failures and correcting them.</p>
+
+    <p>Sometimes the model finds a sentence that I could not have written easily. Sometimes its fluent sentence contains a subtle mistake. In both cases, the responsibility remains mine.</p>
+
+    <hr class="section-break">
+
+    <p>I have used AI while writing about search systems, model behaviour, AI agents and mathematics. The model did not decide why I cared about these subjects. It did not acquire my engineering experience or choose which disagreement was worth pursuing. It helped me express those judgments in readable English. That assistance affects the prose, but it does not settle who did the thinking.</p>
+
+    <p>Cantrill allows LLMs as editors while objecting to their use as writers. For people like me, the boundary is difficult to locate. A rough paragraph may be rewritten so extensively that few of my original words survive. A detailed outline may contain the entire argument without containing a single finished sentence. A spoken explanation can be transcribed and polished. Each process distributes the work differently between the person and the tool.</p>
+
+    <p>A detector only sees the resulting text.</p>
+
+    <p>Pangram acknowledges this problem in its own technical description. Its latest model distinguishes fully generated text from mixed and AI-assisted writing because the provenance of an argument can differ from the provenance of its sentences. That is a more accurate description of present-day writing than a clean division between human authors and machine authors. Yet a policy that requires every public document to receive a "human-authored" verdict collapses those categories again.</p>
+
+    <hr class="section-break">
+
+    <p>There is another part of Cantrill's argument that I accept. Writing is a way of thinking. The effort of constructing a paragraph can reveal that two ideas do not connect, that an example proves less than expected or that a confident opinion has no evidence behind it. A model can conceal these weaknesses by producing a smooth draft before the writer has done the necessary thinking.</p>
+
+    <p>It can also give someone a concrete draft to interrogate. I have found it easier to see a missing argument once the model has attempted to fill it. I can ask for the strongest objection, discover that my answer is weak and return to the source material. I can compare several structures and see that the one I initially preferred hides the central uncertainty. The process still tests the idea, although the friction appears in different places.</p>
+
+    <p>A blank page is not the only place where thought occurs.</p>
+
+    <hr class="section-break">
+
+    <p>The survey Cantrill cites reports that readers stop when they detect AI-written prose. That establishes a real reader reaction, particularly among the developers who answered the survey. It does not establish that readers can reliably determine how a text was produced. A survey about what people do when they believe they have detected AI measures the consequence of that belief. It is not a blinded test of their detection accuracy.</p>
+
+    <p>Cantrill turns to Pangram to resolve this uncertainty. Pangram reports an impressive false-positive rate of 0.0041 percent on its own benchmark of two million licensed, pre-2022 human documents. It also reports strong performance on generated and lightly polished text. Those results make Pangram a serious detection system. They do not yet make a detector score a safe institutional definition of authorship. The figures come from the company's own evaluation, and an average across a large corpus says little about the smaller groups most likely to be affected by a systematic error. Pangram's technical report itself notes that prediction stability across contexts remains an area for improvement.</p>
+
+    <p>This matters to writers whose English differs from the English represented in a detector's training data. A 2023 study by researchers from Stanford and other institutions found that several widely used detectors consistently misclassified writing by non-native English speakers. A more recent EMNLP 2026 study examined 135,389 pairs of non-native manuscripts and professionally edited versions across thirteen detectors. False-positive rates varied enormously, and the same human editing could raise the AI score in one detector while lowering it in another.</p>
+
+    <p>These studies do not demonstrate that Pangram 4 has the same failure modes. They show why independent evaluation across languages, communities and editing practices is necessary before a detector becomes a gatekeeper. A writer should also have some way to challenge a verdict. "The classifier said so" is not an adequate answer when the judgment concerns a person's honesty.</p>
+
+    <hr class="section-break">
+
+    <p>The detector is also answering only one part of the question a reader cares about. It may estimate how the sentences were produced. It cannot determine whether the author understands the argument, whether the evidence has been checked or whether the author will accept responsibility for an error. These properties may correlate with the use of generated prose, especially when someone publishes the first output from a model. They are not equivalent to it.</p>
+
+    <p>I would rather make the social contract explicit. If I put my name on a piece, I should have read every line and be able to defend it. The sources should support the claims attached to them. Uncertainty should survive the editing process. Substantial assistance can be disclosed when its use is relevant to the reader. If the model introduces an error, I own the error.</p>
+
+    <p>This standard allows readers to judge the part that matters: the care exercised by the author. It also leaves room for translators, editors, accessibility tools and people whose ability to form ideas exceeds their command of written English.</p>
+
+    <hr class="section-break">
+
+    <p>LLM-assisted writing will produce an enormous amount of disposable prose. It will also let people enter public conversations that once excluded them. Both consequences are already visible. Concentrating only on the first makes fluency look like authenticity and difficulty with English look like evidence of an authentic voice.</p>
+
+    <p>For me, AI has reduced the distance between an idea and the English needed to share it. The distance has not disappeared. I still have to research, choose, doubt, revise and take responsibility. More of my thoughts now reach people outside the room in which I first explained them.</p>
+
+    <p>Before these tools, many of my essays would have remained private notes. I am willing to have the published ones judged for weak arguments, unsupported claims or wasted words. I am less willing to accept that silence would have been more authentic.</p>
+  </article>
+
+  <footer class="page-footer">
+    Anshu Avinash &middot; 2026
+  </footer>
+
+</div>
+</body>
+</html>
